@@ -6,13 +6,12 @@ let height = document.body.clientHeight;
 elemento.width = width;
 elemento.height = height;
 
-let position = Array(300).join(0).split("");
+let position = Array(6000).join(0).split("");
 
 function inicio_matrix() {
   ctx.fillStyle = "rgba(0,30,1,0.05)";
   ctx.fillRect(0, 0, width, height);
   ctx.fillStyle = "#37cc05"; //color del principio
-
   ctx.font = "11pt arial";
 
   position.map(function (y, index) {
@@ -29,4 +28,4 @@ function inicio_matrix() {
   });
 }
 
-setInterval(inicio_matrix, 50);
+setInterval(inicio_matrix, 70);
